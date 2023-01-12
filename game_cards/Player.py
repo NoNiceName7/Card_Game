@@ -17,5 +17,8 @@ class Player:
     def add_card(self,card:Card):
         self.hand.append(card)
 
+    def __repr__(self):
+        return f"Player :{self.name},and his cards is :{self.hand}"
+
 
 
