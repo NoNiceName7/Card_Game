@@ -1,5 +1,9 @@
 # class of the cards
 class Card:
+    symbol = ["Spades", "Hearts", "Diamonds", "Clubs"]
+    values = [None, None, "2", "3", "4", "5", "6", "7",
+              "8", "9", "10", "Jack", "Queen", "King", "Ace"]
+
     def __init__(self, value, symbol):
         """A constructor of card """
         self.value = value
@@ -20,3 +24,7 @@ class Card:
             return True
         else:
             return False
+
+    def __repr__(self):
+        v = self.values[self.value] + ' ' + self.symbol[self.symbol]
+        return v
