@@ -50,10 +50,10 @@ class TestCard(TestCase):
     def test__eq__valid_2_False_symbol(self):
         """"Checking a valid False case of self symbol not equal to
             other symbol and self value equal to other value"""
-        equal_value = "King"
-        not_equal_symbol = "Spades"
+        equal_value = self.values.index("King")
+        not_equal_symbol = self.symbols.index("Spades")
         self.assertFalse(self.symbols.index(self.symbol) == not_equal_symbol)
-        self.assertTrue(self.values.index(self.value) == equal_value)
+        self.assertEqual(self.values.index(self.value), equal_value)
 
     def test__eq__valid_3_False_value(self):
         """"Checking a valid False case of self symbol equal to

@@ -29,7 +29,8 @@ class Player:
             self.hand.append(deck.deal_one())
 
     def get_card(self):
-        """This method dealing a random card from the player hand and then remove it for the hand"""
+        """This method dealing a random card from the player hand
+        and then remove it form the hand"""
         pick = choice(self.hand)
         self.hand.remove(pick)
         return pick
