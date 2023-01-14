@@ -5,7 +5,7 @@ class Card:
               "8", "9", "10", "Jack", "Queen", "King", "Ace"]
 
     def __init__(self, value, symbol):
-        """A constructor of Card"""
+        """A constructor of Card """
         self.value = value
         self.symbol = symbol
 
@@ -35,3 +35,6 @@ class Card:
     def __repr__(self):
         v = str(self.values[self.value]) + ' ' + str(self.symbols[self.symbol])
         return v
+
+
+

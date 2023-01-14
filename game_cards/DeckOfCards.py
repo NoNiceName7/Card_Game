@@ -11,7 +11,7 @@ class DeckOfCards:
             for symbol in range(4):
                 self.cards.append(Card(value, symbol))
 
-    def Card_shuffle(self):
+    def card_shuffle(self):
         """This method shuffle the deck so the deck will be random"""
         shuffle(self.cards)
 
