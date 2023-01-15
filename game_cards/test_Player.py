@@ -63,6 +63,11 @@ class TestPlayer(TestCase):
                                             "2 Diamonds", "2 Diamonds", "2 Diamonds",
                                             "2 Diamonds"])
 
+    def test_set_hand_valid_length(self):
+        """Checking a valid case of player hand length"""
+        self.p1.set_hand(self.deck)
+        self.assertEqual(self.p1.num_cards, len(self.p1.hand))
+
     def test_set_hand_invalid_deck(self):
         """Checking a case of invalid setting player hand
         the deck isn't DeckOfCards type"""
