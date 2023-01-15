@@ -15,10 +15,10 @@ class CardGame:
             raise TypeError("Argument number of cards 1 must be type of int")
         if type(num_cards2) != int:
             raise TypeError("Argument number of cards 2 must be type of int")
-        if p1=='':
-            p1="Anonymous1"
-        if p2=='':
-            p2="Anonymous2"
+        if p1 == '':
+            p1 = "Anonymous1"
+        if p2 == '':
+            p2 = "Anonymous2"
         self.p1 = Player(p1, num_cards1)
         self.p2 = Player(p2, num_cards2)
         self.deck = DeckOfCards()
