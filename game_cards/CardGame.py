@@ -4,7 +4,7 @@ from DeckOfCards import DeckOfCards
 
 # Class of the card game.
 class CardGame:
-    def __init__(self, p1, num_cards1, p2, num_cards2):
+    def __init__(self, p1: str, num_cards1: int, p2: str, num_cards2: int):
         """This method get two players and how many cards each one get,
          and give each one of them a peck of random cards"""
         if type(p1) != str:

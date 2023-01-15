@@ -14,7 +14,7 @@ class Card:
         if the cards have the same symbol the method check the value"""
         # Club > Hearts > Spades > Diamond
         if self.symbol > other.symbol:
-            # 2 Diamond < Ace Clubs
+            # Ace Diamond < 2 Clubs
             return True
         # 2 < 3 < 4 < 5 < 6 < 7 < 8 < 9 < 10 < Jack < Queen < King < Ace
         elif self.symbol == other.symbol and self.value > other.value:
