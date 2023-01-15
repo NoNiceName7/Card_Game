@@ -11,7 +11,7 @@ class TestPlayer(TestCase):
         self.deck = DeckOfCards()
         self.symbols = ["Diamonds", "Spades", "Hearts", "Clubs"]
         self.values = [None, None, "2", "3", "4", "5", "6", "7",
-                  "8", "9", "10", "Jack", "Queen", "King", "Ace"]
+                       "8", "9", "10", "Jack", "Queen", "King", "Ace"]
         self.value = self.values.index("2")
         self.symbol = self.symbols.index("Clubs")
         self.card1 = Card(self.value, self.symbol)
